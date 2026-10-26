@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#1839ca">
+  <meta name="description" content="ФинМост — учебный финансовый навигатор: бюджет, безопасные решения и платежный календарь малого бизнеса.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>ФинМост — финансовый навигатор</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="engine.js"></script>
+  <script defer src="learning.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержимому</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="ФинМост, обзор"><span class="brandmark">ф</span><span>ФинМост<small>Финансы становятся понятнее</small></span></a>
+      <div class="nav-caption">ВАШ НАВИГАТОР</div>
+      <nav id="nav" aria-label="Разделы приложения"></nav>
+      <div class="side-note"><span class="note-orbit">↗</span><strong>Знания в действии</strong><p>Планируйте, проверяйте решения и учитесь на понятных примерах.</p><button class="text-button" data-action="guide">Показать демо-сценарий <span>→</span></button></div>
+      <div class="side-footer"><div class="avatar">Д</div><div><strong>Демо-профиль</strong><small>Учебные данные</small></div><span class="online-dot" title="Работает локально"></span></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><div class="breadcrumbs">Мой ФинМост <span>/</span> <b id="crumb">Обзор</b></div><div class="header-actions"><span id="save-status" class="save-state"><i></i> Данные на устройстве</span><button class="icon-button" data-action="large" aria-label="Крупный текст" title="Увеличить текст">Аа</button><button class="button button-outline button-small" data-action="export">Скачать отчёт <span>↗</span></button></div></header>
+      <main id="main" tabindex="-1"></main>
+      <footer class="footer"><span><b>ФинМост</b> · конкурсный прототип 1.1</span><span>Расчёты и тренажёры на учебных данных</span><button data-action="about">О проекте</button></footer>
+    </div>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+  <noscript><p>Для работы ФинМоста включите JavaScript. Приложение не отправляет финансовые данные в сеть.</p></noscript>
+</body>
+</html>
